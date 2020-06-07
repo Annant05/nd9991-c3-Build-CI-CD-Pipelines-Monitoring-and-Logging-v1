@@ -22,6 +22,7 @@ pipeline {
                       s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'jenannant123')
                   }
               }
+         }
               
           stage('Security Scan') {
               steps { 
@@ -29,6 +30,5 @@ pipeline {
               }
          }         
 
-         }
      }
 }
